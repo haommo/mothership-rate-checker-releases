@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Trucking Rate Checker</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 760px; margin: 40px auto; padding: 0 16px; line-height: 1.6; color: #1f2933; background: #fff; }
+  h1 { font-size: 1.8rem; }
+  a { color: #0b5cad; }
+  footer { margin-top: 3rem; font-size: 0.9rem; color: #52606d; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p>Last updated: 15 November 2026</p>
+
+<p>This policy explains how Trucking Rate Checker (the "app"), an internal desktop application for checking trucking freight rates, handles data, including data accessed through Google APIs.</p>
+
+<h2>Data the app processes</h2>
+<ul>
+  <li><strong>Shipment data</strong>: shipment codes, addresses, package details, rates and receiver contact details that the team imports or that the app reads from the company's own systems. This data is stored locally on the user's computer.</li>
+  <li><strong>Google Drive</strong>: when a user exports, the app sends a packing list (an Excel file) to a small export service. The service uses one company Google account to create a Google Sheet from it in a company Drive folder and to share that sheet with "anyone with the link: viewer". The link is returned to the app and opened in the user's browser.</li>
+</ul>
+
+<h2>Google user data</h2>
+<ul>
+  <li>The app requests only the <code>https://www.googleapis.com/auth/drive.file</code> scope for the company Google account. It can only create files and manage the files it created. It does not read, list, change or delete any other file in Google Drive.</li>
+  <li>The export service keeps the uploaded file in memory only while creating the sheet. It does not store, log or keep copies of the file content.</li>
+  <li>Google user data is not sold, not used for advertising, and not shared with third parties, except Google itself as needed to create and share the sheet.</li>
+  <li>The app's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+</ul>
+
+<h2>Sharing by link</h2>
+<p>Exported sheets are viewable by anyone who has their link. Users should only share links with people who need them. Sheets can be deleted or unshared at any time from the company Google Drive.</p>
+
+<h2>Revoking access</h2>
+<p>The owner of the company Google account can revoke the app's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. After that, the app can no longer create sheets.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy can be raised through the issue tracker of this repository: <a href="https://github.com/haommo/mothership-rate-checker-releases/issues">github.com/haommo/mothership-rate-checker-releases/issues</a>.</p>
+
+<h2>Tóm tắt tiếng Việt</h2>
+<p>Ứng dụng chỉ dùng quyền <code>drive.file</code> của một tài khoản Google công ty để tạo Google Sheet từ packing list, và chỉ thấy những file do chính nó tạo. File chỉ được xử lý trong bộ nhớ, không được lưu lại trên máy chủ export. Dữ liệu không được bán, không dùng cho quảng cáo. Sheet được chia sẻ cho ai có link đều xem được. Chủ tài khoản Google có thể thu hồi quyền bất cứ lúc nào tại myaccount.google.com/permissions.</p>
+
+<footer><a href="index.html">Trucking Rate Checker</a></footer>
+</body>
+</html>
